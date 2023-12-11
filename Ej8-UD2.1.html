@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <form action="pagina.php" method="post">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" disabled>
+        </p>
+        <p>
+            <label for="comida">Comida:</label>
+            <select name="comida" id="comida">
+                <option value="1">Pizza</option>
+                <option value="2" disabled>Hamburguesa</option>
+                <option value="3" selected>Sushi</option>
+                <option value="4">Ramen</option>
+            </select>
+        </p>
+        <p>
+            <label for="descripcion">Descripción:</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            Ingredientes:
+        <ul style="list-style: none;">
+            <li>
+                <input type="checkbox" name="ingredientes" id="queso" checked>
+                <label for="queso">Queso</label>
+            </li>
+            <li>
+                <input type="checkbox" name="ingredientes" id="tomate">
+                <label for="tomate">Tomate</label>
+            </li>
+            <li>
+                <input type="checkbox" name="ingredientes" id="jamon">
+                <label for="jamon">Jamón</label>
+            </li>
+        </ul>
+        </p>
+        <p>
+            Ingredientes opcionales:
+        <ul style="list-style: none;">
+            <li>
+                <input type="radio" name="IngredientesOpcionales" id="champiñones">
+                <label for="champiñones">Champiñones</label>
+            </li>
+            <li>
+                <input type="radio" name="IngredientesOpcionales" id="peperoni">
+                <label for="peperoni">Peperoni</label>
+            </li>
+            <li>
+                <input type="radio" name="IngredientesOpcionales" id="cebolla">
+                <label for="cebolla">Cebolla</label>
+            </li>
+        </ul>
+        </p>
+        <p>
+            <label for="alergias">¿Tiene alguna alergia?</label>
+            <input type="file" name="alergias" id="alergias">
+        </p>
+        <p>
+            <label for="ciudad">Elige la ciudad:</label>
+            <input list="ciudades" name="ciudad" id="ciudad">
+
+            <datalist id="ciudades">
+                <option value="Vigo">
+                <option value="A coruña">
+                <option value="Ourense">
+                <option value="Pontevedra">
+                <option value="As Neves">
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" name="enviar" id="enviar">
+            <input type="button" name="contactar" id="contactar" value="Contactar" disabled>
+        </p>
+    </form>
+</body>
+
+</html>
